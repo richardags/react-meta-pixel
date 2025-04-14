@@ -1,0 +1,42 @@
+{
+  "name": "react-meta-pixel",
+  "version": "2.0.0",
+  "description": "Typed wrapper around Facebook Pixel",
+  "homepage": "https://github.com/richardags/react-meta-pixel#readme",
+  "bugs": {
+    "url": "https://github.com/richardags/react-meta-pixel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardags/react-meta-pixel.git"
+  },
+  "scripts": {
+    "build": "tsc && npm run minify",
+    "dev": "tsc --watch",
+    "minify": "terser dist/index.js --compress --mangle --output dist/index.min.js"
+  },
+  "keywords": [
+    "facebook",
+    "pixel",
+    "react",
+    "tracking",
+    "typescript",
+    "eventID"
+  ],
+  "license": "MIT",
+  "author": "richardags",
+  "main": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^22.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "prettier-eslint": "^16.3.0",
+    "terser": "^5.31.5",
+    "typescript": "^5.5.4"
+  }
+}
